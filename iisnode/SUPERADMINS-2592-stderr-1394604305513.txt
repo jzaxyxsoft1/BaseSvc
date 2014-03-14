@@ -1,0 +1,12 @@
+Application has thrown an uncaught exception and is terminated:
+TypeError: Object.getOwnPropertyNames called on non-object
+    at Function.getOwnPropertyNames (native)
+    at Collection.find (E:\NodeProjects\BaseSvc\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\collection.js:774:28)
+    at null.<anonymous> (E:\NodeProjects\BaseSvc\node_modules\mongoskin\lib\mongoskin\cursor.js:70:25)
+    at EventEmitter.g (events.js:175:14)
+    at EventEmitter.emit (events.js:98:17)
+    at null.<anonymous> (E:\NodeProjects\BaseSvc\node_modules\mongoskin\lib\mongoskin\collection.js:129:24)
+    at Db.collection (E:\NodeProjects\BaseSvc\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\db.js:488:44)
+    at null.<anonymous> (E:\NodeProjects\BaseSvc\node_modules\mongoskin\lib\mongoskin\collection.js:119:12)
+    at EventEmitter.g (events.js:175:14)
+    at EventEmitter.emit (events.js:98:17)

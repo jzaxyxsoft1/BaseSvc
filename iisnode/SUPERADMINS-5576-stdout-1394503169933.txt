@@ -1,0 +1,541 @@
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+========================================================================================
+=  Please ensure that you set the default write concern for the database by setting    =
+=   one of the options                                                                 =
+=                                                                                      =
+=     w: (value of > -1 or the string 'majority'), where < 1 means                     =
+=        no write acknowlegement                                                       =
+=     journal: true/false, wait for flush to journal before acknowlegement             =
+=     fsync: true/false, wait for flush to file system before acknowlegement           =
+=                                                                                      =
+=  For backward compatibility safe is still supported and                              =
+=   allows values of [true | false | {j:true} | {w:n, wtimeout:n} | {fsync:true}]      =
+=   the default value is false which means the driver receives does not                =
+=   return the information of the success/error of the insert/update/remove            =
+=                                                                                      =
+=   ex: new Db(new Server('localhost', 27017), {safe:false})                           =
+=                                                                                      =
+=   http://www.mongodb.org/display/DOCS/getLastError+Command                           =
+=                                                                                      =
+=  The default of no acknowlegement will change in the very near future                =
+=                                                                                      =
+=  This message will disappear when the default safe is set on the driver Db           =
+========================================================================================
+Express server listening on port \\.\pipe\21ba69fa-3a32-45fd-8482-9383da9bda02
+[90mGET /base/getobjs?callback=jQuery110102912452616728842_1394503169286&tp=Department&query%5B_id%5D%5B%24in%5D%5B%5D=03&query%5B_id%5D%5B%24in%5D%5B%5D=02&query%5B_id%5D%5B%24in%5D%5B%5D=01&query%5B_id%5D%5B%24in%5D%5B%5D=06&option%5BName%5D=1&option%5BReserveWXID%5D=1&_=1394503169287 [32m200 [90m19ms - 406b[0m
+[90mGET /base/getobjs?callback=jQuery110102912452616728842_1394503169286&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2201%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394503169288 [32m200 [90m11ms - 3.43kb[0m
+[90mPOST /base/postsave [32m200 [90m10ms - 31b[0m
+[90mPOST /base/postsave [32m200 [90m22ms - 53b[0m
+[90mGET /base/getobjs?callback=jQuery110107861295496113598_1394503640874&tp=Department&query%5B_id%5D%5B%24in%5D%5B%5D=03&query%5B_id%5D%5B%24in%5D%5B%5D=02&query%5B_id%5D%5B%24in%5D%5B%5D=01&query%5B_id%5D%5B%24in%5D%5B%5D=06&option%5BName%5D=1&option%5BReserveWXID%5D=1&_=1394503640875 [32m200 [90m3ms - 406b[0m
+[90mGET /base/getobjs?callback=jQuery110107861295496113598_1394503640874&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2201%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394503640876 [32m200 [90m4ms - 3.81kb[0m
+[90mPOST /base/postsave [32m200 [90m3ms - 31b[0m
+[90mPOST /base/postsave [32m200 [90m2ms - 53b[0m
+[90mGET /base/getobjs?callback=jQuery110108060417203232646_1394503795495&tp=Department&query%5B_id%5D%5B%24in%5D%5B%5D=03&query%5B_id%5D%5B%24in%5D%5B%5D=02&query%5B_id%5D%5B%24in%5D%5B%5D=01&query%5B_id%5D%5B%24in%5D%5B%5D=06&option%5BName%5D=1&option%5BReserveWXID%5D=1&_=1394503795496 [32m200 [90m3ms - 406b[0m
+[90mGET /base/getobjs?callback=jQuery110108060417203232646_1394503795495&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2201%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394503795497 [32m200 [90m12ms - 3.43kb[0m
+[90mPOST /base/postsave [32m200 [90m4ms - 31b[0m
+[90mPOST /base/postsave [32m200 [90m2ms - 53b[0m
+[90mGET /base/getobjs?callback=jQuery110105211879445705563_1394503933990&tp=Department&query%5B_id%5D%5B%24in%5D%5B%5D=03&query%5B_id%5D%5B%24in%5D%5B%5D=02&query%5B_id%5D%5B%24in%5D%5B%5D=01&query%5B_id%5D%5B%24in%5D%5B%5D=06&option%5BName%5D=1&option%5BReserveWXID%5D=1&_=1394503933991 [32m200 [90m3ms - 406b[0m
+[90mGET /base/getobjs?callback=jQuery110105211879445705563_1394503933990&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2201%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394503933992 [32m200 [90m4ms - 3.8kb[0m
+[90mPOST /base/postsave [32m200 [90m3ms - 31b[0m
+[90mGET /base/getobjs?callback=jQuery110109665944448206574_1394504073812&tp=Department&query%5B_id%5D%5B%24in%5D%5B%5D=03&query%5B_id%5D%5B%24in%5D%5B%5D=02&query%5B_id%5D%5B%24in%5D%5B%5D=01&query%5B_id%5D%5B%24in%5D%5B%5D=06&option%5BName%5D=1&option%5BReserveWXID%5D=1&_=1394504073813 [32m200 [90m2ms - 406b[0m
+[90mGET /base/getobjs?callback=jQuery110109665944448206574_1394504073812&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2201%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394504073814 [32m200 [90m4ms - 3.42kb[0m
+[90mPOST /base/postsave [32m200 [90m2ms - 31b[0m
+[90mGET /base/getobjs?callback=jQuery1101049601594754494727_1394504131702&tp=Department&query%5B_id%5D%5B%24in%5D%5B%5D=03&query%5B_id%5D%5B%24in%5D%5B%5D=02&query%5B_id%5D%5B%24in%5D%5B%5D=01&query%5B_id%5D%5B%24in%5D%5B%5D=06&option%5BName%5D=1&option%5BReserveWXID%5D=1&_=1394504131703 [32m200 [90m7ms - 408b[0m
+[90mGET /base/getobjs?callback=jQuery1101049601594754494727_1394504131702&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2201%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394504131704 [32m200 [90m5ms - 2.65kb[0m
+[90mPOST /base/postsave [32m200 [90m3ms - 31b[0m
+[90mGET /base/getobjs?callback=jQuery1101009948355611413717_1394504187872&tp=Department&query%5B_id%5D%5B%24in%5D%5B%5D=03&query%5B_id%5D%5B%24in%5D%5B%5D=02&query%5B_id%5D%5B%24in%5D%5B%5D=01&query%5B_id%5D%5B%24in%5D%5B%5D=06&option%5BName%5D=1&option%5BReserveWXID%5D=1&_=1394504187873 [32m200 [90m3ms - 408b[0m
+[90mGET /base/getobjs?callback=jQuery1101009948355611413717_1394504187872&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2201%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394504187874 [32m200 [90m3ms - 3.03kb[0m
+[90mGET /base/getobjs?callback=jQuery1101009948355611413717_1394504187872&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2202%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394504187875 [32m200 [90m2ms - 93b[0m
+[90mGET /base/getobjs?callback=jQuery1101009948355611413717_1394504187872&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2201%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394504187876 [32m200 [90m4ms - 3.03kb[0m
+[90mGET /base/getobjs?callback=jQuery1101009948355611413717_1394504187872&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2203%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394504187877 [32m200 [90m6ms - 93b[0m
+[90mGET /base/getobjs?callback=jQuery1101009948355611413717_1394504187872&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2206%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394504187878 [32m200 [90m2ms - 93b[0m
+[90mGET /base/getobjs?callback=jQuery1101009948355611413717_1394504187872&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2202%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394504187879 [32m200 [90m3ms - 93b[0m
+[90mGET /base/getobjs?callback=jQuery1101009948355611413717_1394504187872&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2201%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394504187880 [32m200 [90m8ms - 3.03kb[0m
+[90mGET /base/getobjs?callback=jQuery110109992889056447893_1394504275656&tp=Department&query%5B_id%5D%5B%24in%5D%5B%5D=03&query%5B_id%5D%5B%24in%5D%5B%5D=02&query%5B_id%5D%5B%24in%5D%5B%5D=01&query%5B_id%5D%5B%24in%5D%5B%5D=06&option%5BName%5D=1&option%5BReserveWXID%5D=1&_=1394504275657 [32m200 [90m3ms - 406b[0m
+[90mGET /base/getobjs?callback=jQuery110109992889056447893_1394504275656&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2201%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394504275658 [32m200 [90m6ms - 3.03kb[0m
+[90mGET /base/getobjs?callback=jQuery110109992889056447893_1394504275656&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2202%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394504275659 [32m200 [90m3ms - 91b[0m
+[90mGET /base/getobjs?callback=jQuery110109992889056447893_1394504275656&tp=CRMActivity&query=%7B%22Department.Value%22%3A%2201%22%2C%22Date.Value%22%3A%7B%22%24gte%22%3A20140311%7D%7D&_=1394504275660 [32m200 [90m6ms - 3.03kb[0m
+[90mPOST /base/postsave [32m200 [90m2ms - 31b[0m
