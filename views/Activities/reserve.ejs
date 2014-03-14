@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/WX.css"/>
+    <script type="text/javascript" src="/javascripts/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="/javascripts/knockout-2.2.1.js">
+    </script>
+    <style type="text/css">
+        .itmC {
+            border: 1px solid #e4e4e4;
+            border-radius: 5px;
+            margin-top: 4px;
+        }
+
+        .itmC p {
+            margin: 14px 0px;
+        }
+
+        .itmC img {
+            float: left;
+            width: 120px;
+            height: 120px;
+        }
+
+        .act {
+        }
+
+        .deAct {
+            background-color: #e4e4e4;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+<h1>客户预约</h1>
+
+<div style="width: 100%">
+    <div id="d_main" style="width:  100%">
+        <ul>
+
+        </ul>
+        <div id="d_dates" style="width:96%; padding: 1%;">
+            <!--ko foreach:$data-->
+            <span class="dateItem" style="display: inline-block; padding: 15px 0px; text-align: center "
+                  data-bind="click:dateSlt">
+                <b data-bind="text:dn"></b>
+                <br/>
+                <b data-bind="text:wn"></b>
+            </span>
+            <!--/ko-->
+        </div>
+    </div>
+    <div id="mc" style="  display: none;" data-bind="foreach :$data">
+        <!--ko template:{name:'itmTmpl',foreach:Projects}-->
+        <!--/ko-->
+        <!--ko template:{name:'itmTmpl',foreach:Materials}-->
+        <!--/ko-->
+        <div style=" padding: 10px; text-align: center">
+            <span class="bt" onclick="sp('d_main')">返回</span>
+        </div>
+    </div>
+    <div id="d_confirm" style="text-align: center; display: none">
+        <div style="margin-top: 30px;">
+            <b>预约联系电话:</b><input type="text" value="" id="txt_tel"/>
+        </div>
+        <div style=" margin-top: 10px;">
+            <span class="bt" onclick="sub()">确定</span> <span class="bt ml5" onclick="sp('mc')">返回</span>
+        </div>
+    </div>
+    <div id="d_msg" style="text-align: center; display: none;">
+        <div style="margin-top: 30px;" id="d_msgContent">
+        </div>
+        <div style=" margin-top: 10px;">
+            <span class="bt" onclick="c()">返回</span>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="itmTmpl">
+    <div class="itmC mc wp95 pp1" data-bind="css:{'act':Active,'deAct':$data.Active()==false},click:itmSlt">
+        <img data-bind="attr:{'src':img}"/>
+
+        <div style="float:left; width: auto; margin-left: 10px;">
+            <b data-bind="text:RelativeObj.Item2"></b>
+
+            <p>
+                <b>时段:</b><span data-bind="text:BTime"></span><span>点-</span><span
+                    data-bind="text:ETime"></span><span>点</span>
+            </p>
+
+            <p>
+                <b>地点:</b><span data-bind="text:address"></span>
+            </p>
+
+            <div data-bind="html:valHtml">
+            </div>
+        </div>
+        <div class="cb"></div>
+    </div>
+</script>
+<script type="text/javascript">
+    var GV = {}, tmp, tmpStr, date = new Date;
+    Date.CnDays = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+    Date.addDays = function (d, days) {
+        var _r = new Date(d.getTime());
+        _r.setDate(_r.getDate() + days);
+        return _r;
+    }
+    Date.prototype.getCnDay = function () {
+        return  Date.CnDays[this.getDay()];
+    }
+    Date.prototype.toNumber = function () {
+        var _m = (this.getMonth() + 1).toString();
+        var _d = this.getDate().toString();
+        _m = _m.length > 1 ? _m : '0' + _m;
+        _d = _d.length > 1 ? _d : '0' + _d;
+        return Number(this.getFullYear() + _m + _d);
+    }
+    function sp(id) {
+        $('#' + id).show().siblings().hide()
+    }
+    function generateItem(itm, pid, type, pname) {
+        itm.aID = pid;
+        itm.address = pname;
+        itm.ItemType = type;
+        itm.cls = ko.computed(function () {
+            return  'itmC ' + this.Active ? 'act' : 'deAct'
+        }, itm);
+        tmpStr = tmp = '';
+        if (itm.IsDiscount) {
+            tmp = (itm.Value * 10).toString() + 'Z';
+        }
+        else {
+            tmp = 'Y' + itm.Value.toString();
+        }
+
+        for (var i = 0; i < tmp.length; i++) {
+            tmpStr = tmpStr + (tmp[i] == '.' ? '<span class="iconD">.</span>' : '<span class="icon' + tmp[i] + '"></span>');
+        }
+        itm.valHtml = tmpStr;
+    }
+    $(function () {
+        tmp = 0;
+        GV.dates = [];
+        while (tmp < 7) {
+            var _d = Date.addDays(date, tmp);
+            GV.dates.push({dn: _d.toLocaleDateString().split('年')[1], wn: _d.getCnDay(), val: _d.toNumber() });
+            tmp++;
+        }
+        ko.applyBindings(GV.dates, document.getElementById('d_dates'));
+    })
+    function dateSlt(d) {
+        $.getJSON('/CRMActivies/get', {t: 'objswithimg', query: JSON.stringify({ActType: 'Week', 'Date.Value': d.val})},
+                function (ds) {
+                    $.each(ds, function (idx, i) {
+                        $.each(i.Projects, function (idxx, pi) {
+                            generateItem(pi, i._id, 'p', i.Department.Name);
+                        });
+                        $.each(i.Materials, function (idxx, pi) {
+                            generateItem(pi, i._id, 'm', i.Department.Name)
+                        });
+                    });
+                    if (GV.list) {
+                        ko.mapping.fromJS(ds, GV.list);
+                    }
+                    else {
+                        GV.list = ko.mapping.fromJS(ds);
+                        ko.applyBindings(GV.list, document.getElementById('mc'));
+                    }
+                    sp('mc');
+                }
+        );
+    }
+    function c() {
+        sp(GV.msgType)
+    }
+    function itmSlt(d) {
+        GV.currentItem = d;
+        sp('d_confirm');
+    }
+    function msg(m) {
+        $('#d_msgContent').text(m);
+        sp('d_msg');
+    }
+    function sub() {
+        var ct = $('#txt_tel').val();
+        if (!ct) {
+            GV.msgType = 'd_confirm';
+            msg('请输入预约联系电话!');
+            return;
+        }
+        $.getJSON('/CRMActivies/get',
+                {
+                    t: 'actitemreserve',
+                    id: GV.currentItem.aID,
+                    it: GV.currentItem.ItemType(),
+                    idx: GV.currentItem.idx(),
+                    ctel:ct
+                },
+                function (d) {
+                    GV.msgType = 'mc';
+                    var m = '预约成功!';
+                    if (d.error) {
+                        m = d.error;
+                        switch (d.error) {
+                            case '预约失败':
+                                $.each(GV.list, function (i) {
+                                    i.Active(false);
+                                });
+                                break;
+                            case '已被预约':
+                                GV.currentItem.Active(false);
+                                break;
+                        }
+                    }
+                    if (d.msg) {
+                        GV.currentItem.Active(false);
+                    }
+                    msg(m);
+                })
+    }
+</script>
+</body>
+</html>
